@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib"]  # Makes it a dynamic library
 
 [dependencies]
+onnxruntime = "0.0.14"    # Use the available version of onnxruntime
+ndarray = "0.15.4"         # For handling multidimensional arrays (used for input/output tensors)
